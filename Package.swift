@@ -14,6 +14,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SegmentAppsFlyer",
+            type: .dynamic,
             targets: ["SegmentAppsFlyer"]),
     ],
     dependencies: [
@@ -21,8 +22,8 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
         .package(
             name: "Segment",
-            url: "https://github.com/segmentio/analytics-swift.git",
-            from: "1.5.9"
+            url: "https://github.com/Oleksandr-Cheboraka/analytics-swift.git",
+            from: "1.8.0-dynamic"
         ),
         .package(
             name: "AppsFlyerLib-Dynamic",
